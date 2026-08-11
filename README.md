@@ -16,7 +16,9 @@ Note that these are optimised for my full AMD system and are used alongside [cae
 
 - [Hyprland Documentation](https://wiki.hyprland.org/)
 - [Lua Documentation](https://www.lua.org/manual/)
+## ❗ Notice
 
+Parts of this code repository were generated using artificial intelligence tools. Some scripts, functions, or documentation were created or assisted by AI models. 
 ---
 
 **Ongoing revamp! 11/8/26**
