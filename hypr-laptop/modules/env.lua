@@ -3,10 +3,13 @@
 -- ╚═══════════════════════════════════════════════════════╝
 --
 -- Environment variables for Wayland, toolkits, cursors and
--- overall session configuration. These are set before the
--- compositor fully starts.
+-- overall session configuration.
 
 local home = os.getenv("HOME") or ""
+
+if hl and type(hl.exec) == "function" then
+    hl.exec("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
+    end
 
 -- ── XDG / Session ───────────────────────────────────────────────────────────
 hl.env("XDG_CURRENT_DESKTOP",  "Hyprland")
@@ -24,7 +27,6 @@ hl.env("XDG_DATA_DIRS", table.concat({
 hl.env("GDK_BACKEND",          "wayland,x11")
 hl.env("QT_QPA_PLATFORM",      "wayland;xcb")
 hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
-hl.env("QT_STYLE_OVERRIDE",    "Kvantum")
 hl.env("SDL_VIDEODRIVER",      "wayland")
 hl.env("CLUTTER_BACKEND",      "wayland")
 hl.env("_JAVA_AWT_WM_NONREPARENTING", "1")
