@@ -20,6 +20,3 @@ Note that these are optimised for my full AMD system and are used alongside [cae
 Parts of this code repository were generated using artificial intelligence tools. Some scripts, functions, or documentation were created or assisted by AI models. 
 
 ---
-
-**Ongoing revamp! 11/8/26**
-I don't understand so many things :3 
