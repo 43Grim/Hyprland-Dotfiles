@@ -14,8 +14,6 @@ hl.exec_cmd("hyprctl setcursor Bibata-Modern-Ice 24")
 hl.exec_cmd("gnome-keyring-daemon --start --components=secrets")
 hl.exec_cmd("systemctl --user start hyprpolkitagent || /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1")
 
--- ── Caelestia Shell Utilities ───────────────────────────────────────────────
-hl.exec_cmd("wl-paste --type text  --watch cliphist store")
-hl.exec_cmd("wl-paste --type image --watch cliphist store")
-hl.exec_cmd("caelestia shell -d")
+-- ── Noctalia Shell Utilities ───────────────────────────────────────────────
+hl.exec_cmd("noctalia")
 end)
