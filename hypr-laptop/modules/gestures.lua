@@ -4,7 +4,7 @@
 --
 -- Window touchpad gestures
 
--- ── Gestures ────────────────────────────────────────────────────────────────
+-- ── Gestures ────────────────────────────────────────────────────────────
 hl.config({
     gestures = {
         workspace_swipe_distance              = 300,
