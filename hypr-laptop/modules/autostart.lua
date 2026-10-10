@@ -5,15 +5,15 @@
 -- Services launched once when Hyprland starts.
 
 hl.on("hyprland.start", function()
--- ── User Services ───────────────────────────────────────────────────────────
+-- ── Session / environment ───────────────────────────────────────────────
 hl.exec_cmd("dbus-update-activation-environment --systemd --all")
 hl.exec_cmd("systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
 hl.exec_cmd("hyprctl setcursor Bibata-Modern-Ice 24")
 
--- ── Auth Services ───────────────────────────────────────────────────────────
+-- ── Auth ────────────────────────────────────────────────────────────────
 hl.exec_cmd("gnome-keyring-daemon --start --components=secrets")
 hl.exec_cmd("systemctl --user start hyprpolkitagent || /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1")
 
--- ── Noctalia Shell Utilities ───────────────────────────────────────────────
+-- ── Noctalia Shell ──────────────────────────────────────────────────────
 hl.exec_cmd("noctalia")
 end)
